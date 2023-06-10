@@ -22,13 +22,9 @@ Run the docker-compose.yml file using
 docker compose up
 ```
 
-
-
-
-
-
 Download the python extension in VScode.
 Install MySQL and install the mysql connector using
 ```
 pip install mysql-connector-python
 ```
+Run the Database.py file first and then the Mysql.py
