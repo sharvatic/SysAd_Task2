@@ -5,10 +5,15 @@ sudo -i
 Run the following commands to get the necessary scripts 
 ```
 cd /
+mkdir server1
+cd server1 
 git clone https://github.com/sharvatic/Sysad_task1.git
+cd ..
 git clone https://github.com/sharvatic/SysAd_task2.git
 ```
-Build the docker file given with in the same directory
+Run the hosts.sh script
+
+Build the docker file given within the same directory using
 ```
 docker build -t ubuntu:1.0 .
 ```
