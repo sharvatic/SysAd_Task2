@@ -9,7 +9,7 @@ mkdir server1
 cd server1 
 git clone https://github.com/sharvatic/Sysad_task1.git
 cd ..
-git clone https://github.com/sharvatic/SysAd_task2.git
+git clone https://github.com/sharvatic/SysAd_Task2.git
 ```
 Run the hosts.sh script
 
