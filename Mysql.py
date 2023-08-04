@@ -21,10 +21,13 @@ while i< len(values[0])-1 :
 
 createStatement =createStatement +values[0][i] +'  '+'VARCHAR(15)'+' );'
 
-print(createStatement)
+#print(createStatement)
 mycursor.execute(createStatement)
 
-dumpValues = values[1:]
+query = "INSERT INTO "+ TableName + " (Name, RollNumber, Hostel, Room, Mess, MessPref) values (%s, %s, %s, %s, %s, %s)"
 
-mycursor.executemany("INSERT INTO "+ TableName + " (Name, RollNumber, Hostel, Room, Mess, MessPref) values (%s, %s, %s, %s, %s, %s)", dumpValues )
+
+for i in range(1 , len(values)):
+   mycursor.execute(query, (values[i][0],values[i][1],values[i][2],values[i][3],values[i][4],values[i][5]))
+
 db.commit()
